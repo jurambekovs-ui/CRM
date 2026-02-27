@@ -11,20 +11,22 @@ import {  Menu } from 'antd';
 import { LogoIcon } from '../assets/icons';
 import { Context } from '../context/Context';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { PATH } from '../components';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
 const items: MenuItem[] = [
-  { key: '1', icon: <PieChartOutlined />, label: ' Stacks' },
-  { key: '2', icon: <BarChartOutlined />, label: ' Group' },
-  { key: '3', icon: <UserOutlined />, label: 'Teachers' },
-  { key: '4', icon: <UsergroupAddOutlined />, label: 'Students' },
+  { key: '1', icon: <PieChartOutlined />, label: <Link to={PATH.stacks} >Stacks</Link>  },
+  { key: '2', icon: <BarChartOutlined />, label: <Link to={PATH.groups}> Group</Link>},
+  { key: '3', icon: <UserOutlined />, label: <Link to={PATH.teachers}>Teachers</Link> },
+  { key: '4', icon: <UsergroupAddOutlined />, label: <Link to={PATH.students}>Students</Link> },
   {
     key: 'sub1',
     label: 'Navigation One',
     icon: <MailOutlined />,
     children: [
-      { key: '5', icon: <DropboxOutlined />, label: 'Rooms' },
+      { key: '5', icon: <DropboxOutlined />, label: <Link to={PATH.rooms}>Rooms</Link> },
       { key: '6', label: 'Option 6' },
       { key: '7', label: 'Option 7' },
       { key: '8', label: 'Option 8' },

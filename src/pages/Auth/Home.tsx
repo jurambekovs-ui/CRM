@@ -8,10 +8,6 @@ const Home = () => {
     navigate(PATH.login)
   },[])
   return ""
-
-
-
-
 }
 
 export default Home

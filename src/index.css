@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
-
+*{
+    font-family: cursive;
+}
 body{
     overflow: hidden ;
 }
-*{
-    font-family: cursive;
+input::placeholder{
+    font-family:cursive
+}
+
+.ant-menu-item-selected{
+    background-color: #ffffffa5 !important;
+    color: black !important;
 }

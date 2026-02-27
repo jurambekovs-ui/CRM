@@ -1,9 +1,8 @@
 import { useCookies } from "react-cookie"
-import { AuthRoute } from "./routes"
-import { DashboardHome } from "./pages"
+import { AuthRoute, DashboardRoute } from "./routes"
 
 const App = () => {
   const [cookies] = useCookies(['token'])
-  return cookies.token? <DashboardHome/> : <AuthRoute/>
+  return cookies.token? <DashboardRoute/> : <AuthRoute/>
 }
 export default App

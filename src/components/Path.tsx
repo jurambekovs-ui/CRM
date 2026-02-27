@@ -1,0 +1,31 @@
+const PATH = {
+    home:"/",
+    login:"/login",
+    stacks:"/stacks",
+    stacksMore:"/stacks/:id",
+    stacksCreate:"/stacks/create",
+    stacksUpdate:"/stacks/:id/update",
+    groups:"/groups",
+    groupsMore:"/groups/:id",
+    groupsUpdate:"/groups/:id/update",
+    groupsCreate:"/groups/create",
+    rooms:"/rooms",
+    roomsMore:"/rooms/:id",
+    roomsUpdate:"/rooms/:id/update",
+    roomsCreate:"/rooms/create",
+    teachers:"/teachers",
+    teachersMore:"/teachers/:id",
+    teachersUpdate:"/teachers/:id/update",
+    teachersCreate:"/teachers/create",
+    students:"/students",
+    studentsMore:"/students/:id",
+    studentsUpdate:"/students/:id/update",
+    studentsCreate:"/students/create",
+    users:"/users",
+    usersMore:"/users/:id",
+    usersUpdate:"/users/:id/update",
+    usersCreate:"/users/create",
+    notFound:"*"
+}
+
+export default PATH
